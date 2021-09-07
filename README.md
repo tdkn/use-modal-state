@@ -36,8 +36,8 @@ const Demo = () => {
 
 ## Why?
 
-Is it beautiful to use so many useState?
-(Or do you want to think of a lot of variable names?)
+<details>
+<summary>Is it beautiful to use so many useState? (Or do you want to think of a lot of variable names?)</summary>
 
 ```jsx
 import { useState } from "react";
@@ -60,8 +60,10 @@ const Demo = () => {
   );
 };
 ```
+</details>
 
-Do you want strongly-typed autocomplete?
+<details>
+<summary>Do you want strongly-typed autocomplete?</summary>
 
 ```jsx
 import { useState } from "react";
@@ -98,6 +100,7 @@ const Demo = () => {
   );
 };
 ```
+</details>
 
 ## Author
 
