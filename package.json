@@ -16,16 +16,16 @@
     "name": "Shun Tedokon",
     "url": "https://tdkn.dev"
   },
-  "type": "module",
   "source": "src/use-modal-state.ts",
-  "exports": "./dist/use-modal-state.modern.js",
-  "main": "./dist/use-modal-state.cjs",
-  "module": "./dist/use-modal-state.module.js",
-  "unpkg": "./dist/use-modal-state.umd.js",
-  "types": "./dist/use-modal-state.d.ts",
+  "main": "dist/use-modal-state.js",
+  "module": "dist/use-modal-state.mjs",
+  "unpkg": "dist/use-modal-state.umd.js",
+  "types": "dist/use-modal-state.d.ts",
+  "amdName": "UseModalState",
+  "sideEffects": false,
   "scripts": {
     "prepare": "husky install",
-    "build": "microbundle",
+    "build": "rm -rf dist && microbundle",
     "dev": "microbundle watch",
     "test:prettier": "prettier --check .",
     "test:typescript": "tsc --pretty --noEmit"
