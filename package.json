@@ -1,0 +1,50 @@
+{
+  "name": "@tdkn/use-modal-state",
+  "description": "React hook for modal state",
+  "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "https://github.com/tdkn/use-modal-state#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdkn/use-modal-state.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tdkn/use-modal-state/issues"
+  },
+  "author": {
+    "email": "web@tedokon.com",
+    "name": "Shun Tedokon",
+    "url": "https://tdkn.dev"
+  },
+  "type": "module",
+  "source": "src/use-modal-state.ts",
+  "exports": "./dist/use-modal-state.modern.js",
+  "main": "./dist/use-modal-state.cjs",
+  "module": "./dist/use-modal-state.module.js",
+  "unpkg": "./dist/use-modal-state.umd.js",
+  "types": "./dist/use-modal-state.d.ts",
+  "scripts": {
+    "prepare": "husky install",
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test:prettier": "prettier --check .",
+    "test:typescript": "tsc --pretty --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.20",
+    "husky": "7.0.2",
+    "lint-staged": "^11.1.2",
+    "microbundle": "0.13.3",
+    "prettier": "2.3.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "typescript": "4.4.2"
+  },
+  "lint-staged": {
+    "*.{ts,md}": "prettier --write"
+  }
+}
